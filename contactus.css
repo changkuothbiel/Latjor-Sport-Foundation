@@ -1,0 +1,212 @@
+/* Contact Us Section */
+.contact {
+    padding: 40px 20px;
+    background: #f9f9f9;
+    text-align: center;
+    background-color: lightblue;
+  }
+  
+  .contact h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form .form-group {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .contact-form label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background: #0056b3;
+  }
+  
+  /* Contact Information */
+  .contact-info {
+    margin-top: 40px;
+  }
+  
+  .contact-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .contact-info ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .contact-info ul li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .contact-info a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+
+  Social Media Links
+.social-media-links {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .social-media-links h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .social-media-links p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 25px;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Optional: Color variations for each platform */
+  .facebook:hover {
+    background-color: #3b5998;
+  }
+  
+  .twitter:hover {
+    background-color: #1da1f2;
+  }
+  
+  .instagram:hover {
+    background-color: #e1306c;
+  }
+
+
+  /* Footer Section */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  border-top: 4px solid #007bff;
+}
+
+footer p {
+  margin: 0 0 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon.facebook {
+  color: #3b5998; /* Facebook Blue */
+}
+
+.social-icon.twitter {
+  color: #1da1f2; /* Twitter Light Blue */
+}
+
+.social-icon.instagram {
+  color: #e4405f; /* Instagram Orange */
+}
+
+.social-icon.youtube {
+  color: #ff0000; /* YouTube Red */
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .social-icons {
+    gap: 10px;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
+
+
+  

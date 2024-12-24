@@ -1,0 +1,141 @@
+/* Support Us Page Specific Styles */
+.support-intro {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: lightskyblue;
+  }
+  
+  .support-intro h1 {
+    font-size: 2.5rem;
+  }
+  
+  .support-intro p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .ways-to-support {
+    padding: 40px 20px;
+    text-align: center;
+
+  }
+  
+  .ways-to-support h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .support-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .support-card {
+    max-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: lightskyblue;
+  }
+  
+  .support-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .support-card p {
+    color: #666;
+  }
+  
+  .equipment-needed {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .equipment-needed h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .equipment-needed ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+  }
+  
+  .equipment-needed ul li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: left;
+    color: #333;
+  }
+
+  /* Footer Section */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  border-top: 4px solid #007bff;
+}
+
+footer p {
+  margin: 0 0 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon.facebook {
+  color: #3b5998; /* Facebook Blue */
+}
+
+.social-icon.twitter {
+  color: #1da1f2; /* Twitter Light Blue */
+}
+
+.social-icon.instagram {
+  color: #e4405f; /* Instagram Orange */
+}
+
+.social-icon.youtube {
+  color: #ff0000; /* YouTube Red */
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .social-icons {
+    gap: 10px;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
+
+
+  

@@ -1,0 +1,136 @@
+/* Gallery Section */
+.gallery {
+    padding: 40px 20px;
+    background: #f9f9f9;
+    text-align: center;
+  }
+  
+  .gallery h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .gallery p {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+  }
+  
+  /* Grid Layout for Photos and Videos */
+  .gallery-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  /* Photos Section */
+  .photos {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .photos h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Videos Section */
+  .videos {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .videos h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .video-grid iframe {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+
+  /* Footer Section */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  border-top: 4px solid #007bff;
+}
+
+footer p {
+  margin: 0 0 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icon {
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon.facebook {
+  color: #3b5998; /* Facebook Blue */
+}
+
+.social-icon.twitter {
+  color: #1da1f2; /* Twitter Light Blue */
+}
+
+.social-icon.instagram {
+  color: #e4405f; /* Instagram Orange */
+}
+
+.social-icon.youtube {
+  color: #ff0000; /* YouTube Red */
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .social-icons {
+    gap: 10px;
+  }
+
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+
+
+
+  
