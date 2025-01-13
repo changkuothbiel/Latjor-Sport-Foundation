@@ -1,81 +1,228 @@
-/* Support Us Page Specific Styles */
+/* General section styling */
 .support-intro {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: lightskyblue;
-  }
-  
-  .support-intro h1 {
-    font-size: 2.5rem;
-  }
-  
-  .support-intro p {
-    font-size: 1.2rem;
-    color: #555;
-  }
-  
-  .ways-to-support {
-    padding: 40px 20px;
-    text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to bottom right, #007bff, #28a745);
+  color: #ffffff;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  position: relative;
+}
 
+/* Adding decorative background shapes */
+.support-intro::before,
+.support-intro::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.support-intro::before {
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  top: -50px;
+  left: -50px;
+}
+
+.support-intro::after {
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.1);
+  bottom: -80px;
+  right: -80px;
+}
+
+/* Headline styling */
+.support-intro h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  z-index: 1;
+  position: relative;
+}
+
+/* Paragraph styling */
+.support-intro p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 700px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
+
+/* Adding a button */
+.support-intro .cta-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  color: #007bff;
+  background-color: #fff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+}
+
+.support-intro .cta-button:hover {
+  background-color: #28a745;
+  color: #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .support-intro h1 {
+      font-size: 2.2em;
   }
-  
-  .ways-to-support h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+
+  .support-intro p {
+      font-size: 1em;
   }
+
+  .support-intro .cta-button {
+      font-size: 1em;
+      padding: 12px 25px;
+  }
+}
+
   
+  /* General styling for ways-to-support */
+.ways-to-support {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  color: #343a40;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Section header */
+.ways-to-support h2 {
+  font-size: 2.5em;
+  color: #007bff;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Support options container */
+.support-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Support card styling */
+.support-card {
+  flex: 1 1 300px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.support-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border-color: #007bff;
+}
+
+/* Support card headings */
+.support-card h3 {
+  font-size: 1.8em;
+  color: #007bff;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Support card paragraphs */
+.support-card p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #495057;
+}
+
+/* Equipment-needed section styling */
+.equipment-needed {
+  margin-top: 40px;
+  background: #e9ecef;
+  padding: 30px 20px;
+  border-radius: 10px;
+  text-align: left;
+  color: #212529;
+  border: 1px solid #ddd;
+}
+
+/* Equipment-needed heading */
+.equipment-needed h2 {
+  font-size: 2em;
+  color: #28a745;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Equipment-needed list */
+.equipment-needed ul {
+  list-style: none;
+  padding: 0;
+}
+
+.equipment-needed ul li {
+  font-size: 1em;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  color: #495057;
+}
+
+.equipment-needed ul li::before {
+  content: '✓';
+  color: #28a745;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Equipment-needed paragraph */
+.equipment-needed p {
+  margin-top: 20px;
+  font-size: 1em;
+  line-height: 1.6;
+  color: #495057;
+  text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
   .support-options {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+      flex-direction: column;
+      gap: 20px;
   }
-  
+
   .support-card {
-    max-width: 300px;
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background: lightskyblue;
+      flex: 1 1 auto;
   }
-  
-  .support-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  .support-card p {
-    color: #666;
-  }
-  
-  .equipment-needed {
-    padding: 40px 20px;
-    text-align: center;
-  }
-  
-  .equipment-needed h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .equipment-needed ul {
-    list-style: none;
-    padding: 0;
-    max-width: 600px;
-    margin: 0 auto 20px auto;
-  }
-  
-  .equipment-needed ul li {
-    background: #f9f9f9;
-    margin: 10px 0;
-    padding: 10px 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-align: left;
-    color: #333;
-  }
+}
+
 
   /* Footer Section */
 footer {

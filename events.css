@@ -1,63 +1,224 @@
-/* Events Page Specific Styles */
-.upcoming-events, .past-events {
-    padding: 40px 20px;
-    background-color: #1da1f2;
+/* Upcoming Events Section Styling */
+.upcoming-events {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #f7f9fc, #e3f2fd);
+  color: #343a40;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Heading */
+.upcoming-events h1 {
+  font-size: 2.8em;
+  color: #007bff;
+  margin-bottom: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Table Styling */
+.upcoming-events table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Table Header */
+.upcoming-events table thead {
+  background: #007bff;
+  color: #ffffff;
+}
+
+.upcoming-events table thead th {
+  padding: 15px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* Table Rows */
+.upcoming-events table tbody tr {
+  transition: all 0.3s ease-in-out;
+}
+
+.upcoming-events table tbody tr:hover {
+  background: #f1f8ff;
+}
+
+.upcoming-events table tbody tr:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+.upcoming-events table tbody td {
+  padding: 15px;
+  text-align: center;
+  font-size: 1em;
+  color: #495057;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Last Row Styling */
+.upcoming-events table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  .upcoming-events table {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      border: none;
   }
-  
-  .upcoming-events h1, .past-events h2 {
-    font-size: 2rem;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
+
+  .upcoming-events table thead,
+  .upcoming-events table tbody,
+  .upcoming-events table th,
+  .upcoming-events table td,
+  .upcoming-events table tr {
+      display: block;
   }
-  
-  table {
-    width: 90%;
-    margin: 0 auto 20px auto;
-    border-collapse: collapse;
+
+  .upcoming-events table thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
   }
-  
-  table th, table td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
+
+  .upcoming-events table tbody tr {
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background: #ffffff;
+      padding: 10px;
   }
-  
-  table th {
-    background-color: #f9f9f9;
-    color: #333;
+
+  .upcoming-events table td {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      text-align: left;
   }
-  
-  table tr:nth-child(even) {
-    background-color: #f2f2f2;
+
+  .upcoming-events table td:before {
+      content: attr(data-label);
+      font-weight: bold;
+      flex: 0 0 100px;
+      color: #007bff;
   }
-  
+}
+/* Past Events Section Styling */
+.past-events {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #f9f9f9, #ffffff);
+  color: #333333;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Heading */
+.past-events h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #007bff;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* Event Recaps Container */
+.event-recaps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Event Card Styling */
+.event-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.event-card {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  min-height: 300px; /* Ensures enough space for content */
+  padding: 20px;
+  margin-bottom: 20px;
+  color: white;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Add a dark overlay to enhance text visibility */
+.event-card .overlay {
+  position: relative;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.6); /* Adjust opacity for better visibility */
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Optional: Ensure the card's text content stays within bounds */
+.event-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+/* Interactive hover effect for better UX */
+.event-card:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .past-events h2 {
+      font-size: 2em;
+  }
+
   .event-recaps {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+      grid-template-columns: 1fr;
   }
-  
-  .event-card {
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    max-width: 300px;
-    text-align: left;
-  }
-  
+
   .event-card h3 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
+      font-size: 1.6em;
   }
-  
+
   .event-card p {
-    color: #666;
-    line-height: 1.6;
+      font-size: 0.9em;
   }
+}
 
 
   /* Footer Section */

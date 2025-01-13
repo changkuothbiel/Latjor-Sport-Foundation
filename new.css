@@ -1,47 +1,97 @@
-/* News and Updates Page */
+/* News and Updates Section */
 .news-updates {
-    padding: 40px 20px;
-    background: #f9f9f9;
-    text-align: center;
+  background-color: #f5f7fa;
+  padding: 50px 20px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.news-updates h1 {
+  font-size: 2.5em;
+  color: #003B73;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.news-item {
+  background: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.news-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.news-item h2 {
+  font-size: 1.8em;
+  color: #0078D4;
+  margin-bottom: 10px;
+}
+
+.news-item p {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.6;
+}
+
+.news-item p strong {
+  color: #555;
+}
+
+.news-item .btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #0078D4;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.news-item .btn:hover {
+  background-color: #0056a3;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .news-updates {
+      padding: 30px 10px;
   }
-  
+
   .news-updates h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+      font-size: 2em;
   }
-  
+
   .news-item {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    text-align: left;
+      padding: 15px;
   }
-  
+
   .news-item h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+      font-size: 1.5em;
   }
-  
+
   .news-item p {
-    color: #666;
-    font-size: 1rem;
-    margin-bottom: 15px;
+      font-size: 1em;
   }
-  
+
   .news-item .btn {
-    padding: 10px 20px;
-    background: #007bff;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+      padding: 8px 16px;
   }
-  
-  .news-item .btn:hover {
-    background: #0056b3;
-  }
+}
+
   
 
   /* Footer Section */

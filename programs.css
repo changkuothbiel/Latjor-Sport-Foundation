@@ -5,47 +5,97 @@
      
 }
 
-.sports-programs
-h1, .training-schedule
-h2, .upcoming-events h2 {
-    font-size: 2rem;
-    color: #333;
-    text-align: center;
+/* General styles for sports programs section */
+.sports-programs {
+  padding: 20px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  background: url('/mnt/data/FootbQuipment.JPEG') no-repeat center center;
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.sports-programs
-p, .training-schedule
-p, .upcoming-events p {
-    text-align: center;
-    color: #555;
-    margin-bottom: 20px;
+/* Cover area for title and description */
+.program-cover {
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay for readability */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.sports-programs
-ul, .training-schedule
-ul, .upcoming-events ul {
-    list-style: none;
-    padding: 0;
-    margin: 20px auto;
-    max-width: 600px;
+.program-cover h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffdd57;
 }
 
-.sports-programs ul
-li, .training-schedule ul
-li, .upcoming-events ul li {
-    background: #f9f9f9;
-    margin: 10px 0;
-    padding: 10px 15px;
-    border-radius: 5px;
-    text-align: left;
-    color: #333;
+.program-cover p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin: 0 auto;
+  max-width: 600px;
 }
 
-.sports-programs ul li
-strong, .upcoming-events ul li
-strong {
-    font-weight: bold;
-    color: #000;
+/* Equipment list styling */
+.equipment-list {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.equipment-list h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #ffdd57;
+}
+
+.equipment-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.equipment-list li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 25px;
+}
+
+.equipment-list li:before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #ffdd57;
+  font-size: 1.2em;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .sports-programs {
+      padding: 10px;
+  }
+
+  .program-cover h1 {
+      font-size: 2em;
+  }
+
+  .program-cover p {
+      font-size: 1em;
+  }
+
+  .equipment-list h2 {
+      font-size: 1.5em;
+  }
+
+  .equipment-list ul {
+      font-size: 1em;
+  }
 }
 
 
